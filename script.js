@@ -13,8 +13,17 @@ function flipCard () {
     // First Card
     isFlipped = true
     firstCard = this
+    console.log(firstCard.dataset.languages)
   } else {
+    // Second Card
     isFlipped = false;
     secondCard = this
+
+
+    // Comparing the values
+    if(firstCard.dataset.languages === secondCard.dataset.languages) {
+      console.log('Matched')  
+    }
   }
+
 }
